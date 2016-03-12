@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mtmamaclay.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:text="Mad Minutes"
+        android:textSize= "45dp"
+        android:gravity="center"
+        android:layout_marginTop="34dp"
+        android:id="@+id/question"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:id="@+id/easy"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:id="@+id/medium"
+        android:layout_below="@+id/easy"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Hard"
+        android:id="@+id/hard"
+        android:layout_below="@+id/medium"
+        android:layout_alignLeft="@+id/medium"
+        android:layout_alignStart="@+id/medium" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/userInput"
+        android:layout_below="@+id/hard"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id ="@+id/score" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okay"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
